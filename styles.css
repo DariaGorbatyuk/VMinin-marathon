@@ -66,3 +66,7 @@ body {
 .hold {
     border: 3px solid lightblue;
 }
+
+.hide {
+    display: none;
+}
