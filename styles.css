@@ -70,3 +70,7 @@ body {
 .hide {
     display: none;
 }
+
+.enter{
+background: linear-gradient(to bottom, #ff85e4 10%, transparent 25%);
+}
