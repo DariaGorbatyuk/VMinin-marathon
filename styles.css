@@ -71,6 +71,6 @@ body {
     display: none;
 }
 
-.enter{
-background: linear-gradient(to bottom, #ff85e4 10%, transparent 25%);
+.enter {
+    border-top: 2px dashed #ff85e4;
 }

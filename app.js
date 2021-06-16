@@ -10,11 +10,12 @@ for (const column of columns) {
     column.addEventListener('drop', onDragDrop);
 }
 
-function onDragStart() {
+function onDragStart(evt) {
+    evt.dataTransfer.dropEffect = "move";
     item.classList.add('hold');
     setTimeout(() => {
         item.classList.add('hide');
-    }, 0)
+    }, 0);
 }
 
 function onDragEnd() {
@@ -25,13 +26,16 @@ function onDragOver(evt) {
     evt.preventDefault();
 }
 
-function onDragEnter(evt){
+function onDragEnter(evt) {
     evt.currentTarget.classList.add('enter');
 }
-function onDragLeave(evt){
+
+function onDragLeave(evt) {
     evt.currentTarget.classList.remove('enter');
 }
-function onDragDrop(evt){
-    evt.currentTarget.classList.remove('enter');
 
+function onDragDrop(evt) {
+    evt.preventDefault();
+    evt.currentTarget.classList.remove('enter');
+    evt.target.appendChild(item);
 }
