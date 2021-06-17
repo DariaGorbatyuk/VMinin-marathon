@@ -1,13 +1,32 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: #111;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
 }
+
+.container {
+    max-width: 400px;
+    outline: 1px solid silver;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 16px;
+    height: 16px;
+    background-color: #1d1d1d;
+    box-shadow: 0 0 2px 0 black;
+    transition: 2s ease;
+}
+
