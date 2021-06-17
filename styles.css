@@ -23,8 +23,8 @@ body {
 }
 
 .box{
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     background-color: #1d1d1d;
     box-shadow: 0 0 2px 0 black;
     transition: 2s ease;
