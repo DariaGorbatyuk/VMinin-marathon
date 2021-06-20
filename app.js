@@ -76,7 +76,6 @@ function createRandomCircle() {
     circle.style.left = `${x}px`;
     circle.style.background =`${color}`;
     board.append(circle);
-    console.log(circle)
 }
 
 function getRandomInt(min, max) {
