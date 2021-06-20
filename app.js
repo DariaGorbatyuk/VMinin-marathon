@@ -64,7 +64,7 @@ function setTime(value) {
 
 function createRandomCircle() {
     const {width, height} = board.getBoundingClientRect();
-    const size = getRandomInt(10, 60);
+    const size = getRandomInt(15, 60);
     const x = getRandomInt(0, width - size);
     const y = getRandomInt(0, height - size);
     const color = COLORS[getRandomInt(0, COLORS.length-1)];
