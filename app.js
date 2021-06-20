@@ -42,6 +42,7 @@ function startGame() {
 
 function endGame() {
     timeEl.parentElement.style.visibility = 'hidden';
+    board.innerHTML = `<h1>Счет <span class="primary">${score}</span></h1>`;
 }
 
 function onDecreaseTime() {
