@@ -4,9 +4,20 @@ const timeList = document.querySelector('#time-list');
 const timeEl = document.querySelector('#time');
 const board = document.querySelector('#board');
 let time = 0;
+let score = 0;
 
 start.addEventListener('click', onStartGame);
 timeList.addEventListener('click', onTimeChoice)
+board.addEventListener('click', onTargetClick)
+
+function onTargetClick(evt) {
+    if (!evt.target.matches('.circle')) {
+        return
+    }
+    score++;
+    evt.target.remove();
+    createRandomCircle();
+}
 
 function onStartGame(evt) {
     evt.preventDefault();
